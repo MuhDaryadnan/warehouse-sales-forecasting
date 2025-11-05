@@ -1,30 +1,52 @@
-# Warehouse Sales Forecast
+# 📈 Warehouse Sales Forecast
 
-Project ini bertujuan untuk memprediksi penjualan bulanan dari data warehouse dan retail.  
-Model ini menggunakan pendekatan regresi sederhana seperti Lasso, Ridge, Random Forest, dan Gradient Boosting.
+This project aims to **predict monthly sales** using historical warehouse and retail data.  
+The model applies several regression-based approaches such as **Lasso**, **Ridge**, **Random Forest**, and **Gradient Boosting** to estimate total sales performance.
 
-## Dataset
-Data diambil dari file `Warehouse_and_Retail_Sales.csv` yang berisi informasi tahunan dan bulanan tentang:
+---
+
+## 📊 Dataset
+The dataset (`Warehouse_and_Retail_Sales.csv`) contains yearly and monthly information on:
 - Retail Sales  
 - Warehouse Sales  
 - Retail Transfers  
 
-Kolom tersebut digabungkan menjadi satu metrik total (`TOTAL_SALES`) untuk dilakukan analisis dan prediksi.
+These columns are combined into a single metric called **`TOTAL_SALES`**, which serves as the main target variable for analysis and forecasting.
 
-## Langkah Utama
-1. Data preprocessing (penggabungan kolom & konversi tanggal)
-2. Exploratory Data Analysis (EDA) untuk melihat tren
-3. Pembuatan fitur lag dan rolling window
-4. Training model regresi
-5. Evaluasi hasil (MAE, RMSE, R²)
-6. Visualisasi hasil prediksi vs data aktual
+---
 
-## Hasil
-Model Lasso Regression memberikan performa terbaik dengan:
-- MAE: ±12.411
-- R²: 0.868
+## 🧠 Main Steps
+1. **Data Preprocessing** – merging columns and converting dates  
+2. **Exploratory Data Analysis (EDA)** – identifying sales trends and patterns  
+3. **Feature Engineering** – creating lag and rolling window features  
+4. **Model Training** – applying various regression models  
+5. **Evaluation** – comparing results using MAE, RMSE, and R² metrics  
+6. **Visualization** – plotting predicted vs. actual sales values  
 
-## Cara Menjalankan
+---
+
+## 🏆 Results
+The **Lasso Regression** model achieved the best performance with:
+- **MAE:** ~12,411  
+- **R² Score:** 0.868  
+
+---
+
+## 💡 Insights
+- Adding lag and rolling window features significantly improved forecast accuracy.  
+- The model captures seasonal patterns and overall sales trends effectively.  
+- Lasso performed best due to its ability to reduce overfitting and handle correlated features.
+
+---
+
+## 🔮 Future Improvements
+- Experiment with advanced models such as **ARIMA**, **Prophet**, or **LSTM** for time-series forecasting.  
+- Integrate a **Streamlit dashboard** for interactive visualization.  
+- Include external factors (e.g., holidays, promotions, weather) to enhance accuracy.
+
+---
+
+## ⚙️ How to Run
 ```bash
 pip install -r requirements.txt
 jupyter notebook notebooks/Fixed_Forecast.ipynb
