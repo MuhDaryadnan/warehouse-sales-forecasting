@@ -24,10 +24,6 @@ Model Lasso Regression memberikan performa terbaik dengan:
 - MAE: ±12.411
 - R²: 0.868
 
-## Visualisasi
-Contoh hasil prediksi:
-![Forecast Result](images/forecast_plot.png)
-
 ## Cara Menjalankan
 ```bash
 pip install -r requirements.txt
