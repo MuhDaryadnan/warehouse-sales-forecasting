@@ -45,8 +45,3 @@ The **Lasso Regression** model achieved the best performance with:
 - Include external factors (e.g., holidays, promotions, weather) to enhance accuracy.
 
 ---
-
-## ⚙️ How to Run
-```bash
-pip install -r requirements.txt
-jupyter notebook notebooks/Fixed_Forecast.ipynb
